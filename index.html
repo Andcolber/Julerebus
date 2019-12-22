@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>Julerebus 2019!</title>
+<meta charset="utf-8" />
+<style>
+body {
+  background-image: url('bakgrunn.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  text-color: white;  
+  display:flex;
+}
+
+body, html {   
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    display:table;
+	color: white;
+	font-size: 2vw;
+	display:table-cell;
+	margin:auto;
+	text-align:centre;
+}
+
+</style>
+<body>
+
+<h3>Velkommen til julerebus 2019!<h3>
+
+
+<input id="myInput" value="Navn">
+<button id="myBtn" onclick="checkname()">OK</button>
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+</script>
+
+<script type="text/javascript">
+	function checkname() {
+        var confirmstian = "Stian"
+		var confirmmamma = "May-Berit"
+		var confirmpappa = "Lorentz-Erik"
+		var confirmkarina = "Karina"
+		var confirmcaroline = "Caroline";
+				
+        var password = document.getElementById("myInput").value;
+		
+        if (password == confirmstian) {
+             window.location="stian1.html";
+        }
+		if (password == confirmmamma) {
+             window.location="mamma1.html";
+		}	  
+		if (password == confirmpappa) {
+             window.location="Lorentz-Erik1.html";
+		}	 
+		if (password == confirmkarina) {
+             window.location="Karina1.html";
+		}	 
+		if (password == confirmcaroline) {
+             window.location="Caroline1.html";
+		}	 
+        else{          
+        }
+    }
+</script>
+
+</body>
+</html>

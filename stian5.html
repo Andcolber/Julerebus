@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Julerebus 2019!</title>
+<style>
+body {
+  background-image: url('bakgrunn.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  text-color: white;  
+  display:flex;
+}
+
+body, html {   
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    display:table;
+	color: white;
+	font-size: 1vw;
+	display:table-cell;
+	margin:auto;
+	text-align:centre;
+	position: relative;
+}
+
+</style>
+</head>
+<body>
+<h1 style="text-align:center">Oppgave 3</h1>
+
+<img width="100%" src="ressurser/stian3.png">
+
+<h1 >KHVHWGQDSUXOWULWHGQHDGLOPH</h1>
+
+<input id="myInput">
+<button id="myBtn" onclick="checkpass()">OK</button>
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+</script>
+
+<script type="text/javascript">
+	function checkpass() {
+        var pass = "HAAPERDUSLITERLITTMEDDENNE";
+		
+        var password = document.getElementById("myInput").value;
+		
+        if (password.toLowerCase() === pass.toLowerCase()) {
+             window.location="stian6.html";
+        }
+		
+        else{javascript:alert("nope")         
+        }
+    }
+</script>
+</body>
+</html>

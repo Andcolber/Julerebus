@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+<title>Julerebus 2019!</title>
+<style>
+body {
+  background-image: url('bakgrunn.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  text-color: white;  
+  display:flex;
+}
+
+body, html {   
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    display:table;
+	color: white;
+	font-size: 2vw;
+	display:table-cell;
+	margin:auto;
+	text-align:centre;
+}
+
+</style>
+</head>
+<body>
+<img width="50%" src="ressurser/mr.jpg">
+<p font size="30">Mindre kjent syndrom som kan beskrives slik: "Den plutselige utviklingen av bilateral occipital dysfunksjon kan medføre midlertidige fysiske og psykiske effekter hvor forvirring kan være prominent. Det kan ta flere dager før pårørende eller pleiepersonale oppfatter at pasienten har blitt uten syn. Dette er ikke bare fordi pasientene ikke ønsker å fortelle andre at de har blitt blinde, men også fordi de oppfører seg som om de kan se. Pasientene vil ofte kollidere med møbler og falle over objekter, og har problemer med å finne veien. Pasientene vil konfabulere og bortforklare hvorfor de kolliderer og sliter med å finne veien</p>
+<input id="myInput">
+<button id="myBtn" onclick="checkname()">OK</button>
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+</script>
+
+<script type="text/javascript">
+	function checkname() {
+        var pass = "anton syndrom";
+		
+        var password = document.getElementById("myInput").value;
+		
+        if (password.toLowerCase() === pass.toLowerCase()) {
+             window.location="mamma4.html";
+        }
+		
+        else{javascript:alert("nope")         
+        }
+    }
+</script>
+</body>
+</html>

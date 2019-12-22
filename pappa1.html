@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Julerebus 2019!</title>
+<meta charset="utf-8" />
+<style>
+body {
+  background-image: url('bakgrunn.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  text-color: white;  
+  display:flex;
+}
+
+body, html {   
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    display:table;
+	color: white;
+	font-size: 2vw;
+	display:table-cell;
+	margin:auto;
+	text-align:centre;
+}
+
+</style>
+</head>
+<body>
+<img width="50%" src="ressurser/mynt.jpg">
+
+<p font size="30">"rex perpetuus"</p>
+
+<input id="myInput" value="navn">
+<button id="myBtn" onclick="checkname()">OK</button>
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+</script>
+
+<script type="text/javascript">
+	function checkname() {
+        var pass = "Olav Den Hellige";
+		
+        var password = document.getElementById("myInput").value;
+		
+        if (password.toLowerCase() === pass.toLowerCase()) {
+             window.location="pappa2.html";
+        }
+		
+        else{javascript:alert("nope")         
+        }
+    }
+</script>
+</body>
+</html>

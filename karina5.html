@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+<title>Julerebus 2019!</title>
+<style>
+body {
+  background-image: url('bakgrunn.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  text-color: white;  
+  display:flex;
+}
+
+body, html {   
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    display:table;
+	color: white;
+	font-size: 2vw;
+	display:table-cell;
+	margin:auto;
+	text-align:centre;
+}
+
+</style>
+</head>
+<body>
+	<h1>EEEEDDFFFFECE</h1>
+	<br>
+	
+<link rel="stylesheet" href="piano_style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://www.verovio.org/javascript/latest/verovio-toolkit.js"></script> <!--Only needed for notes display-->
+<script src="piano.js"></script>
+	
+<input id="myInput" value="etternavn">
+<button id="myBtn" onclick="checkpass()">OK</button>
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+</script>
+
+<script type="text/javascript">
+	function checkpass() {
+        var pass = "skram";
+		
+        var password = document.getElementById("myInput").value;
+		
+        if (password.toLowerCase() === pass.toLowerCase()) {
+             window.location="karina6.html";
+        }
+		
+        else{javascript:alert("nope")         
+        }
+    }
+</script>
+</body>
+</html>
